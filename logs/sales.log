@@ -1,0 +1,115 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "code/f98_sales_value.py", line 31, in <module>
+    import numpy as np, pandas as pd
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "code/f98_sales_value.py", line 31, in <module>
+    import numpy as np, pandas as pd
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+  demographics: dx_inc, dx_age, dx_edu, dx_hh, dx_urb (zip3 ACS 2016-2019, x log pack size)
+  reg3: 1,429,175 rows  50,646 markets  80 clusters
+  states: NNN:953,632  SNN:115,915  NNS:115,225  NSN:106,510  NSS:45,584  SSN:45,019  SNS:36,880  SSS:10,410
+[4607s] setup: 1,429,175 rows, 50,646 markets
+[4877s]   observed shares reproduced to 2.45e-13
+
+profit change (%) of each firm: dropping its own sales alone vs all firms dropping
+  ABI            alone   -1.69   all   +3.42   rivals' profit when it drops alone: MolsonCoors +4.23, Constellation +3.49, Heineken +3.63
+  MolsonCoors    alone   -2.98   all   +3.12   rivals' profit when it drops alone: ABI +3.18, Constellation +2.30, Heineken +2.53
+  Constellation  alone   +2.91   all  +10.36   rivals' profit when it drops alone: ABI +1.06, MolsonCoors +1.19, Heineken +2.33
+  Heineken       alone   +7.59   all  +18.30   rivals' profit when it drops alone: ABI +0.18, MolsonCoors +0.18, Constellation +0.51
+                         cs       ps  inside_share_sum   ps_ABI  ps_Constellation  ps_Heineken  ps_MolsonCoors    cs_q1    cs_q2    cs_q3    cs_q4    cs_q5     total
+case                                                                                                                                                                 
+observed            74123.8  42722.5           16971.8  21837.2            5847.8        694.9         14342.6  10819.1  12108.6  13771.0  16070.4  21354.6  116846.2
+no_sales            67490.2  44648.6           15605.1  22583.2            6453.8        822.0         14789.7   9967.3  11007.0  12480.7  14567.8  19467.3  112138.8
+no_discount         69585.2  45807.8           16000.3  23187.1            6488.8        830.1         15301.8  10169.8  11312.1  12873.3  15065.0  20165.1  115393.1
+no_regimes          71946.9  41577.0           16570.3  21266.9            5770.3        674.8         13865.2  10631.7  11800.2  13362.3  15543.9  20608.8  113523.9
+solo_ABI            71078.8  43189.3           16339.1  21468.2            6051.7        720.1         14949.3  10474.5  11624.7  13180.3  15361.1  20438.2  114268.1
+solo_MolsonCoors    72025.7  43143.0           16518.3  22532.5            5982.2        712.4         13915.8  10609.1  11793.2  13370.5  15572.4  20680.4  115168.6
+solo_Constellation  73140.7  43311.3           16823.2  22069.7            6017.9        711.1         14512.6  10589.4  11888.4  13567.2  15887.4  21208.3  116452.1
+solo_Heineken       73958.9  42871.9           16946.0  21877.6            5877.7        747.6         14369.0  10778.6  12071.2  13737.1  16040.5  21331.5  116830.8
+                    cs_pct_vs_observed  ps_pct_vs_observed  inside_share_sum_pct_vs_observed  ps_ABI_pct_vs_observed  ps_Constellation_pct_vs_observed  ps_Heineken_pct_vs_observed  ps_MolsonCoors_pct_vs_observed  cs_q1_pct_vs_observed  cs_q2_pct_vs_observed  cs_q3_pct_vs_observed  cs_q4_pct_vs_observed  cs_q5_pct_vs_observed  total_pct_vs_observed
+case                                                                                                                                                                                                                                                                                                                                                         
+observed                          0.00                0.00                              0.00                    0.00                              0.00                         0.00                            0.00                   0.00                   0.00                   0.00                   0.00                   0.00                   0.00
+no_sales                         -8.95                4.51                             -8.05                    3.42                             10.36                        18.30                            3.12                  -7.87                  -9.10                  -9.37                  -9.35                  -8.84                  -4.03
+no_discount                      -6.12                7.22                             -5.72                    6.18                             10.96                        19.46                            6.69                  -6.00                  -6.58                  -6.52                  -6.26                  -5.57                  -1.24
+no_regimes                       -2.94               -2.68                             -2.37                   -2.61                             -1.33                        -2.90                           -3.33                  -1.73                  -2.55                  -2.97                  -3.28                  -3.49                  -2.84
+solo_ABI                         -4.11                1.09                             -3.73                   -1.69                              3.49                         3.63                            4.23                  -3.19                  -4.00                  -4.29                  -4.41                  -4.29                  -2.21
+solo_MolsonCoors                 -2.83                0.98                             -2.67                    3.18                              2.30                         2.53                           -2.98                  -1.94                  -2.60                  -2.91                  -3.10                  -3.16                  -1.44
+solo_Constellation               -1.33                1.38                             -0.88                    1.06                              2.91                         2.33                            1.19                  -2.12                  -1.82                  -1.48                  -1.14                  -0.69                  -0.34
+solo_Heineken                    -0.22                0.35                             -0.15                    0.18                              0.51                         7.59                            0.18                  -0.37                  -0.31                  -0.25                  -0.19                  -0.11                  -0.01
+[4877s] done

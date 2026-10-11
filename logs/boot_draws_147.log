@@ -1,0 +1,23 @@
+  demographics: dx_inc, dx_age, dx_edu, dx_hh, dx_urb (zip3 ACS 2016-2019, x log pack size)
+  reg3: 1,429,175 rows  50,646 markets  80 clusters
+  states: NNN:953,632  SNN:115,915  NNS:115,225  NSN:106,510  NSS:45,584  SSN:45,019  SNS:36,880  SSS:10,410
+[192s] frame: 1,429,175 rows, 290 stores, 1000 draws per market, 24 workers
+  draw 147: already done, skipped
+  [257s] draw 148: contraction 65s
+  [290s] draw 148: supply 34s
+  [801s] draw 148: regimes 510s
+  [812s] draw 148: panel A 11s
+  [977s] draw 148: panel B 166s
+  draw 148: 785s, peak 6.9 GB in the largest process -> results/boot/draw_148.json
+  [1021s] draw 149: contraction 43s
+  [1051s] draw 149: supply 31s
+  [1526s] draw 149: regimes 474s
+  [1537s] draw 149: panel A 11s
+  [1689s] draw 149: panel B 152s
+  draw 149: 712s, peak 6.9 GB in the largest process -> results/boot/draw_149.json
+  [1756s] draw 150: contraction 67s
+  [1791s] draw 150: supply 35s
+  [2301s] draw 150: regimes 510s
+  [2312s] draw 150: panel A 11s
+  [2481s] draw 150: panel B 169s
+  draw 150: 792s, peak 6.9 GB in the largest process -> results/boot/draw_150.json

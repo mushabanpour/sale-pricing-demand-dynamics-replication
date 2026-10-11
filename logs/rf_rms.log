@@ -1,0 +1,271 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "code/RF_RMS.py", line 9, in <module>
+    runpy.run_path(str(CODE / "f80_rf_scanner.py"), run_name="__main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "code/f80_rf_scanner.py", line 17, in <module>
+    import numpy as np, pandas as pd, pyhdfe
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "code/RF_RMS.py", line 9, in <module>
+    runpy.run_path(str(CODE / "f80_rf_scanner.py"), run_name="__main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "code/f80_rf_scanner.py", line 17, in <module>
+    import numpy as np, pandas as pd, pyhdfe
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+  look-up frame 1,685,742 rows (sale defined); ESTIMATION rows 1,539,972 = baseline1 sample
+BASELINE SAMPLE: 1,539,972 rows  51,028 store-weeks  290 stores  80 DMAs  14 brands  weeks 3-208
+
+==============================================================================
+RF0  CHOICE OF REFERENCE: median vs mean vs min of the prior four weeks
+==============================================================================
+code/f80_rf_scanner.py:114: RuntimeWarning: All-NaN slice encountered
+  refs = {"median": np.nanmedian(S, axis=2), "mean": np.nanmean(S, axis=2),
+code/f80_rf_scanner.py:114: RuntimeWarning: Mean of empty slice
+  refs = {"median": np.nanmedian(S, axis=2), "mean": np.nanmean(S, axis=2),
+code/f80_rf_scanner.py:115: RuntimeWarning: All-NaN slice encountered
+  "min": np.nanmin(S, axis=2)}
+        sale_rate  both_weeks  p_sale_given_sale  mean_depth  window_has_a_sale
+median      14.52        3.84              26.43       11.32              35.58
+mean        13.79        3.54              25.67       10.79                NaN
+min          5.95        0.27               4.63       11.28                NaN
+
+  premises, against each cell's modal price (unfitted):
+    at_mode                 45.01
+    below_mode              32.43
+    above_mode              22.56
+    tail_below_10           14.00
+    tail_above_10            7.47
+    mean_dev                -1.29
+    median_dev              -0.00
+    window_gt_half           1.95
+    ref_change_median        0.00
+    ref_change_gt5           9.89
+    dev_min                -83.42
+    dev_max                150.25
+
+==============================================================================
+RF1  DYNAMIC PRICING: how often, how deep, how persistent -- by rung
+==============================================================================
+        rows  sale_rate  p_sale_given_sale  mean_depth_pct  med_depth_pct  mean_spell_wks  p_spell_1wk
+rung                                                                                                  
+6     458609       2.72              32.26           11.09           9.46            1.47        65.01
+12    393241      18.08              28.16           12.39          10.35            1.39        69.67
+18    360274      19.49              23.09           11.25          10.21            1.30        75.70
+24    221727      21.42              28.63           10.43           9.10            1.39        67.12
+30     99312      20.44              25.21           10.12           9.01            1.33        71.65
+36      6809      24.09              20.26            9.96           8.91            1.25        79.82
+
+  persistence ratio P(sale|sale)/P(sale): 6:11.85  12:1.56  18:1.18  24:1.34  30:1.23  36:0.84
+
+==============================================================================
+RF2  EVENT STUDY: log servings on sale leads/lags -4..+4
+     cell (store x alternative) + week effects, clustered on DMA
+==============================================================================
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+    lead/lag cells with an unobserved neighbor, coded 0: 1,159,564 of 13,859,748 (8.4%)
+         coef      se        t
+lead4 -0.0292  0.0036  -8.0585
+lead3 -0.0473  0.0052  -9.1128
+lead2 -0.0563  0.0061  -9.2949
+lead1 -0.0890  0.0072 -12.4036
+t0     0.4629  0.0184  25.0936
+lag1  -0.0249  0.0078  -3.1961
+lag2   0.0133  0.0067   1.9794
+lag3   0.0333  0.0042   8.0101
+lag4   0.0569  0.0039  14.6358
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+    lead/lag cells with an unobserved neighbor, coded 0: 44,885 of 955,089 (4.7%)
+
+  large(30+): lead4:-0.065  lead3:-0.089  lead2:-0.057  lead1:-0.163  t0:+0.403  lag1:-0.082  lag2:-0.002  lag3:-0.013  lag4:+0.034
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+    lead/lag cells with an unobserved neighbor, coded 0: 461,773 of 5,238,009 (8.8%)
+
+  mid(18-24): lead4:-0.017  lead3:-0.047  lead2:-0.062  lead1:-0.094  t0:+0.522  lag1:-0.029  lag2:+0.016  lag3:+0.039  lag4:+0.069
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+code/f80_rf_scanner.py:94: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  cols.append(v.fillna(False).astype(float).to_numpy())
+    lead/lag cells with an unobserved neighbor, coded 0: 652,906 of 7,666,650 (8.5%)
+
+  small(6-12): lead4:-0.039  lead3:-0.037  lead2:-0.046  lead1:-0.059  t0:+0.384  lag1:+0.003  lag2:+0.015  lag3:+0.038  lag4:+0.044
+
+  averaged profile (pre = mean of k=-4..-1, post = mean of k=+1..+4):
+                         all                  large(30+)                  mid(18-24)                  small(6-12)                 
+                        coef      se        t       coef      se        t       coef      se        t        coef      se        t
+   pre-sale average  -0.0555  0.0033 -16.7247    -0.0934  0.0118  -7.9450    -0.0549  0.0048 -11.5052     -0.0453  0.0032 -14.1261
+   sale week          0.4629  0.0184  25.0936     0.4032  0.0359  11.2360     0.5216  0.0197  26.4960      0.3842  0.0194  19.7710
+   post-sale average  0.0197  0.0031   6.3222    -0.0157  0.0073  -2.1444     0.0236  0.0036   6.4846      0.0251  0.0040   6.2172
+
+==============================================================================
+RF3  CROSS-RUNG SUBSTITUTION: own sale vs a sale on a SMALLER / LARGER rung
+     log servings, cell + week effects, clustered on DMA
+==============================================================================
+                        coef      se        t
+own sale              0.4450  0.0174  25.5780
+sale on SMALLER rung -0.0923  0.0064 -14.5341
+sale on LARGER rung  -0.0858  0.0076 -11.3333
+
+  by rung (own sale | smaller on sale | larger on sale):
+    rung 6   own +0.186 (+12.38)  larger -0.005 (-1.61)
+    rung 12  own +0.404 (+19.28)  smaller -0.007 (-0.49)  larger -0.080 (-11.28)
+    rung 18  own +0.487 (+26.45)  smaller -0.042 (-5.68)  larger -0.215 (-13.06)
+    rung 24  own +0.442 (+21.49)  smaller -0.111 (-11.39)  larger -0.124 (-5.63)
+    rung 30  own +0.386 (+11.24)  smaller -0.152 (-4.69)  larger -0.249 (-2.13)
+    rung 36  own +0.524 (+3.19)  smaller -0.038 (-2.16)
+
+==============================================================================
+RF4  CATEGORY EXPANSION: does a sale grow the store-week category?
+==============================================================================
+code/f80_rf_scanner.py:305: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  m[["big_sale_f", "small_sale_f"]] = m[["big_sale_f", "small_sale_f"]].fillna(False)
+  store-weeks 51,028
+                         coef      se       t
+share of alts on sale  0.3136  0.0589  5.3214
+any LARGE-pack sale    0.1116  0.0183  6.1129
+any SMALL-pack sale    0.0026  0.0065  0.4080
+
+fit statistics:
+                   n  r2_within  clusters  k
+fit                                         
+event_all    1539972     0.0736        80  9
+event_large   106121     0.1056        59  9
+event_mid     582001     0.1138        80  9
+event_small   851850     0.0377        80  9
+cross_all    1539972     0.0720        80  3
+cross_6       458609     0.0030        80  2
+cross_12      393241     0.0684        80  3
+cross_18      360274     0.1096        80  3
+cross_24      221727     0.0963        80  3
+cross_30       99312     0.0914        58  3
+cross_36        6809     0.1037        29  2
+category       51028     0.0411        80  3
+
+CSV written to results/f80_rf*.csv

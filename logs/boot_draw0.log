@@ -1,0 +1,49 @@
+  demographics: dx_inc, dx_age, dx_edu, dx_hh, dx_urb (zip3 ACS 2016-2019, x log pack size)
+  reg3: 1,429,175 rows  50,646 markets  80 clusters
+  states: NNN:953,632  SNN:115,915  NNS:115,225  NSN:106,510  NSS:45,584  SSN:45,019  SNS:36,880  SSS:10,410
+[152s] frame: 1,429,175 rows, 290 stores, 1000 draws per market, 24 workers
+  [180s] draw 0: contraction 28s
+  [203s] draw 0: supply 22s
+  [543s] draw 0: regimes 340s
+  [550s] draw 0: panel A 7s
+  [657s] draw 0: panel B 107s
+  draw 0: 504s, peak 6.7 GB in the largest process -> results/boot/draw_000.json
+
+Hendel-Nevo: (profit_X - profit_NPD) / (profit_3rd - profit_NPD), 2 segments; _p by the price draw nu_1, _n by the pack-size draw nu_2
+  third degree = NPD3_p   MIX  1.846  VD  1.358  IT  0.690
+  third degree = MIX3_p   MIX  0.606  VD  0.446  IT  0.227
+  third degree = NPD3_n   MIX 55.227  VD 40.610  IT 20.640
+  third degree = MIX3_n   MIX  0.991  VD  0.729  IT  0.370
+  profit: MIX 46,390  VD 45,226  IT 43,635  NPD 41,991  NPD3_p 44,373  MIX3_p 49,248  NPD3_n 42,070  MIX3_n 46,431
+
+draw 0 against results/ (the article's numbers):
+  brewer markup %                     21.9881        21.9881  diff +1.42e-14
+  gap, no-sale weeks                   0.0463         0.0463  diff +1.87e-14
+  gap, sale weeks                     -1.0824        -1.0824  diff -4.80e-14
+  gap, sale weeks %                   -9.7208        -9.7208  diff -6.86e-13
+  MIX CS                           70696.3118     70696.3118  diff -3.59e-08
+  MIX PS                           46390.2838     46390.2838  diff -1.74e-08
+  VD CS                            68337.6902     68337.6902  diff -3.51e-08
+  VD PS                            45225.9080     45225.9080  diff -1.74e-08
+  IT CS                            65511.5008     65511.5008  diff -3.37e-08
+  IT PS                            43635.0344     43635.0344  diff -1.67e-08
+  NPD CS                           62412.4763     62412.4763  diff -3.26e-08
+  NPD PS                           41990.7875     41990.7875  diff -1.66e-08
+  MIX profit ABI                   23434.2257     23434.2257  diff -9.07e-09
+  MIX profit Constellation          6653.8939      6653.8939  diff -2.92e-09
+  MIX profit Heineken                857.5579       857.5579  diff -3.00e-10
+  MIX profit MolsonCoors           15444.6063     15444.6063  diff -5.08e-09
+  Panel A no_sales cs %               -8.9493        -8.9493  diff -1.61e-12
+  Panel A no_sales ps %                4.5086         4.5086  diff -2.85e-12
+  Panel A no_sales total %            -4.0287        -4.0287  diff -1.65e-12
+  Panel A no_discount cs %            -6.1229        -6.1229  diff -5.67e-13
+  Panel A no_discount ps %             7.2219         7.2219  diff -1.36e-12
+  Panel A no_discount total %         -1.2437        -1.2437  diff -4.51e-13
+  Panel A no_regimes cs %             -2.9369        -2.9369  diff -6.09e-13
+  Panel A no_regimes ps %             -2.6811        -2.6811  diff -2.32e-12
+  Panel A no_regimes total %          -2.8433        -2.8433  diff -1.23e-12
+  Panel B own ABI %                   -1.5358        -1.5358  diff +9.55e-13
+  Panel B own MolsonCoors %           -2.7626        -2.7626  diff -1.67e-13
+  Panel B own Constellation %          3.2064         3.2064  diff +1.11e-13
+  Panel B own Heineken %               7.9041         7.9041  diff -6.00e-13
+  Panel A shares reproduced to 3.1e-13

@@ -1,0 +1,42 @@
+  demographics: dx_inc, dx_age, dx_edu, dx_hh, dx_urb (zip3 ACS 2016-2019, x log pack size)
+  reg3: 1,429,175 rows  50,646 markets  80 clusters
+  states: NNN:953,632  SNN:115,915  NNS:115,225  NSN:106,510  NSS:45,584  SSN:45,019  SNS:36,880  SSS:10,410
+(iv) J diagnostic  rows 1,429,175  markets 50,646  MD 52  df 2
+  contraction at pi_p -0.49300  sigma_p 0.35344  sigma_lsz 1.08045  [696s]
+  check: xi rebuilt from delta and X1 matches pyblp's xi to 8.9e-16
+
+  HANSEN J 3.523  df 2  p 0.1718  clusters 80   (estimation log: 3.523  MATCH)
+
+  BY DMA: additive shares sum to 3.523; top 5 carry 2.449, top 10 3.843
+     dma    share    J w/o     rows  stores  chains
+     623    0.610    4.807   35,705       5  36,50,72,9
+     506    0.598   13.079   51,602       5  59
+     765    0.582   23.039   36,046       5  9
+     538    0.335    3.855   10,603       5  294
+     770    0.324    5.392   11,637       2  9
+     544    0.323    5.179   33,250       5  111,130,79
+     514    0.314    3.712    9,981       5  294
+     517    0.270    4.001   28,336       5  111,79
+     669    0.270    4.279    5,266       1  174
+     868    0.218   41.532   18,010       5  183,199,32,993
+     555    0.211    3.497    7,173       4  294
+     790    0.203   22.394   34,154       5  9
+  ... lowest J without one DMA: 3.489 (DMA 705)
+
+  BY INSTRUMENT (excluded; z = sqrt(N) g_k / sqrt(S_kk), J without it has df 1)
+  z1           z  +1.405   J without    3.214
+  z_haus       z  +0.452   J without    3.504
+  sq_dev_lsz   z  +0.310   J without    3.506
+  sum_lsz      z  -1.000   J without    3.390
+  sum_can      z  +0.126   J without    3.504
+  largest |z| among the 47 exogenous X1 moments: 0.651
+
+  BY DIRECTION: condition number of S 1.34e+12; 0 directions below pinv's cutoff
+  smallest 5 eigenvalues carry 0.218 of J; largest 5 carry 3.086
+    lambda 1.94e-07  share   0.170   loads on SSS_36(+0.92), SNN_36(+0.25), SSN_36(-0.22)
+    lambda 8.35e-07  share   0.000   loads on SSN_36(+0.66), NSS_36(-0.62), SNN_36(-0.33)
+    lambda 3.27e-06  share   0.019   loads on SNN_36(+0.67), NSS_36(-0.48), NNS_36(-0.47)
+    lambda 2.37e-05  share   0.005   loads on SSN_36(+0.63), NSS_36(+0.57), NNS_36(-0.34)
+    lambda 6.74e-05  share   0.024   loads on SNS_36(+0.51), NNS_36(-0.38), SNN_36(-0.34)
+
+[810s] done

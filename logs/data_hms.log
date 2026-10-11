@@ -1,0 +1,218 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "code/Data_HMS.py", line 12, in <module>
+    runpy.run_path(str(CODE / "f81_rf_hms.py"), run_name="__main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "code/f81_rf_hms.py", line 19, in <module>
+    import numpy as np, pandas as pd, pyhdfe
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "code/Data_HMS.py", line 12, in <module>
+    runpy.run_path(str(CODE / "f81_rf_hms.py"), run_name="__main__")
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "code/f81_rf_hms.py", line 19, in <module>
+    import numpy as np, pandas as pd, pyhdfe
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/shared/EL9/explorer/anaconda3/2024.06/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.4 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+HMS purchases  250,297
+  households 24,414  brands 14  deal rate 22.0%
+  rung mix: {6: 31084, 12: 76940, 18: 35373, 24: 68854, 30: 32869, 36: 5177}
+
+==============================================================================
+RF5  DO HOUSEHOLDS UPSIZE ON A DEAL?   household + month effects, cl household
+==============================================================================
+  log oz per pack    deal +0.0286  (t +4.73)
+  1{n_cans >= 24}    deal -0.0106  (t -1.47)
+  1{n_cans >= 30}    deal -0.0098  (t -2.19)
+
+  deal rate BY RUNG (raw):
+               n  deal_pct
+   n_cans                 
+   6       31084      8.40
+   12      76940     22.49
+   18      35373     25.72
+   24      68854     24.32
+   30      32869     25.43
+   36       5177     17.98
+
+  deal price gap per ounce: overall -8.5%  by rung 6:+1.8  12:-3.0  18:-4.0  24:-5.6  30:-4.4  36:-7.5
+
+==============================================================================
+RF6  DEPLETION: does buying MORE today delay the next beer purchase?
+     days to next purchase | log oz bought, household effects, cl household
+==============================================================================
+  n 193,486 purchase spells, 13,340 households
+                  coef      se        t
+log oz bought   2.8050  0.2246  12.4883
+bought on deal  0.4242  0.2201   1.9272
+
+  mean days to next purchase by rung bought  (RAW vs WITHIN-household):
+            size   mean  median  within
+   n_cans                              
+   6       20232  33.62    15.0   25.03
+   12      56816  29.44    14.0   25.97
+   18      28453  24.45    12.0   25.83
+   24      55925  22.67    11.0   26.35
+   30      27670  22.54    11.0   26.50
+   36       4390  22.90    12.0   26.68
+
+==============================================================================
+RF7  REPLENISHMENT: purchase hazard by weeks since the last beer purchase
+==============================================================================
+  household-weeks 2,327,624  households 24,414  at-risk weeks 1,028,283
+               n  hazard_pct
+   since                    
+   1.0    202063       29.11
+   2.0    141757       20.83
+   3.0    111309       15.25
+   4.0     93643       12.44
+   5.0     81345       10.08
+   6.0     72286        8.62
+   7.0     65253        7.39
+   8.0     59894        6.73
+   9.0     55308        5.80
+   10.0    51592        5.37
+   11.0    48361        4.99
+   12.0    45472        4.37
+
+  hazard RAW vs WITHIN-household (%):
+          hazard_pct  hazard_within_pct
+   since                               
+   1.0         29.11              15.13
+   2.0         20.83              16.23
+   3.0         15.25              15.29
+   4.0         12.44              15.02
+   5.0         10.08              14.39
+   6.0          8.62              14.09
+   7.0          7.39              13.76
+   8.0          6.73              13.77
+   9.0          5.80              13.41
+   10.0         5.37              13.43
+   11.0         4.99              13.44
+   12.0         4.37              13.19
+
+  hazard (%) by weeks since last purchase, split on SIZE of that purchase:
+          small last (<216oz)  large last (>=216oz)  gap (large - small)
+   since                                                                
+   1.0                  18.63                 34.81                16.18
+   2.0                  14.55                 25.08                10.53
+   3.0                  11.14                 18.43                 7.30
+   4.0                   8.98                 15.36                 6.39
+   5.0                   7.56                 12.35                 4.79
+   6.0                   6.57                 10.57                 4.00
+   7.0                   5.86                  8.92                 3.06
+   8.0                   5.59                  7.90                 2.31
+   9.0                   4.75                  6.92                 2.17
+   10.0                  4.42                  6.39                 1.97
+   11.0                  4.14                  5.92                 1.79
+   12.0                  3.50                  5.35                 1.85
+
+  P(buy this week), household x year + week effects, clustered on household:
+                                coef      se       t
+   log oz of last purchase   -0.0141  0.0015 -9.6728
+   weeks since last purchase  0.0011  0.0001  8.7943
+
+==============================================================================
+RF8  SORTING ON PACK SIZE: who buys big, and how fast do they consume?
+     the reduced-form counterpart of sigma_lsz
+==============================================================================
+  households with >=4 beer trips: 9,853
+  quintiles of a household's AVERAGE pack size:
+      households  mean_cans  trips_per_yr  oz_per_week
+   q                                                  
+   1        1991       8.49         13.17        30.06
+   2        1950      12.60         18.66        64.27
+   3        2053      16.23         16.89        78.11
+   4        1900      20.55         26.27       160.83
+   5        1959      26.28         31.57       256.36
+
+  corr(household mean pack size, oz consumed per week) = +0.303 (Spearman +0.581)
+  dispersion IN household mean pack size: sd 6.42 cans, p10 8.6  p50 16.2  p90 25.1
+
+fit statistics:
+              n  r2_within  clusters  k
+fit                                    
+         250297     0.0008     24414  1
+         250297     0.0001     24414  1
+         250297     0.0002     24414  1
+gap      193486     0.0015     13340  2
+hazard  1028283     0.0004     24226  2
+
+CSV written to results/f81_rf*.csv

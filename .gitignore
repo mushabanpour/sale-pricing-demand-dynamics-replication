@@ -1,0 +1,11 @@
+# licensed NielsenIQ data and everything built from it stay off GitHub
+data/*.parquet
+data/positions/
+build/work/
+build/data/
+estimation/
+results/
+positions/
+__pycache__/
+.DS_Store
+._*

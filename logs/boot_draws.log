@@ -1,0 +1,876 @@
+  demographics: dx_inc, dx_age, dx_edu, dx_hh, dx_urb (zip3 ACS 2016-2019, x log pack size)
+  reg3: 1,429,175 rows  50,646 markets  80 clusters
+  states: NNN:953,632  SNN:115,915  NNS:115,225  NSN:106,510  NSS:45,584  SSN:45,019  SNS:36,880  SSS:10,410
+[141s] frame: 1,429,175 rows, 290 stores, 1000 draws per market, 24 workers
+  [162s] draw 2: contraction 21s
+  [183s] draw 2: supply 20s
+  [489s] draw 2: regimes 307s
+  [496s] draw 2: panel A 6s
+  [585s] draw 2: panel B 90s
+  draw 2: 444s, peak 6.7 GB in the largest process -> results/boot/draw_002.json
+  [606s] draw 3: contraction 21s
+  [624s] draw 3: supply 18s
+  [901s] draw 3: regimes 277s
+  [908s] draw 3: panel A 6s
+  [1008s] draw 3: panel B 100s
+  draw 3: 422s, peak 6.7 GB in the largest process -> results/boot/draw_003.json
+  [1040s] draw 4: contraction 32s
+  [1065s] draw 4: supply 25s
+  [1399s] draw 4: regimes 334s
+  [1406s] draw 4: panel A 7s
+  [1516s] draw 4: panel B 110s
+  draw 4: 508s, peak 6.7 GB in the largest process -> results/boot/draw_004.json
+  [1542s] draw 5: contraction 26s
+  [1563s] draw 5: supply 21s
+  [1883s] draw 5: regimes 320s
+  [1889s] draw 5: panel A 6s
+  [1978s] draw 5: panel B 88s
+  draw 5: 461s, peak 6.7 GB in the largest process -> results/boot/draw_005.json
+  [1997s] draw 6: contraction 20s
+  [2017s] draw 6: supply 19s
+  [2314s] draw 6: regimes 297s
+  [2320s] draw 6: panel A 6s
+  [2426s] draw 6: panel B 105s
+  draw 6: 448s, peak 6.7 GB in the largest process -> results/boot/draw_006.json
+  [2455s] draw 7: contraction 29s
+  [2477s] draw 7: supply 22s
+  [2807s] draw 7: regimes 330s
+  [2813s] draw 7: panel A 6s
+  [2919s] draw 7: panel B 106s
+  draw 7: 494s, peak 6.7 GB in the largest process -> results/boot/draw_007.json
+  [2951s] draw 8: contraction 31s
+  [2973s] draw 8: supply 23s
+  [3301s] draw 8: regimes 327s
+  [3307s] draw 8: panel A 7s
+  [3416s] draw 8: panel B 109s
+  draw 8: 497s, peak 6.7 GB in the largest process -> results/boot/draw_008.json
+  [3447s] draw 9: contraction 31s
+  [3470s] draw 9: supply 23s
+  [3799s] draw 9: regimes 329s
+  [3805s] draw 9: panel A 7s
+  [3904s] draw 9: panel B 99s
+  draw 9: 488s, peak 6.7 GB in the largest process -> results/boot/draw_009.json
+  [3925s] draw 10: contraction 21s
+  [3946s] draw 10: supply 21s
+  [4251s] draw 10: regimes 304s
+  [4257s] draw 10: panel A 6s
+  [4350s] draw 10: panel B 93s
+  draw 10: 446s, peak 6.7 GB in the largest process -> results/boot/draw_010.json
+  [4389s] draw 11: contraction 39s
+  [4415s] draw 11: supply 26s
+  [4740s] draw 11: regimes 325s
+  [4746s] draw 11: panel A 6s
+  [4860s] draw 11: panel B 114s
+  draw 11: 511s, peak 6.7 GB in the largest process -> results/boot/draw_011.json
+  [4884s] draw 12: contraction 24s
+  [4904s] draw 12: supply 20s
+  [5208s] draw 12: regimes 303s
+  [5214s] draw 12: panel A 6s
+  [5307s] draw 12: panel B 93s
+  draw 12: 446s, peak 6.7 GB in the largest process -> results/boot/draw_012.json
+  [5329s] draw 13: contraction 22s
+  [5349s] draw 13: supply 20s
+  [5646s] draw 13: regimes 298s
+  [5653s] draw 13: panel A 6s
+  [5746s] draw 13: panel B 93s
+  draw 13: 439s, peak 6.7 GB in the largest process -> results/boot/draw_013.json
+  [5773s] draw 14: contraction 27s
+  [5796s] draw 14: supply 23s
+  [6113s] draw 14: regimes 317s
+  [6120s] draw 14: panel A 7s
+  [6223s] draw 14: panel B 104s
+  draw 14: 478s, peak 6.7 GB in the largest process -> results/boot/draw_014.json
+  [6249s] draw 15: contraction 26s
+  [6271s] draw 15: supply 22s
+  [6584s] draw 15: regimes 313s
+  [6591s] draw 15: panel A 7s
+  [6692s] draw 15: panel B 101s
+  draw 15: 468s, peak 6.7 GB in the largest process -> results/boot/draw_015.json
+  [6720s] draw 16: contraction 28s
+  [6743s] draw 16: supply 23s
+  [7062s] draw 16: regimes 319s
+  [7069s] draw 16: panel A 7s
+  [7175s] draw 16: panel B 106s
+  draw 16: 483s, peak 6.7 GB in the largest process -> results/boot/draw_016.json
+  [7218s] draw 17: contraction 43s
+  [7246s] draw 17: supply 28s
+  [7591s] draw 17: regimes 344s
+  [7598s] draw 17: panel A 7s
+  [7722s] draw 17: panel B 124s
+  draw 17: 547s, peak 6.7 GB in the largest process -> results/boot/draw_017.json
+  [7749s] draw 18: contraction 27s
+  [7771s] draw 18: supply 22s
+  [8092s] draw 18: regimes 320s
+  [8099s] draw 18: panel A 7s
+  [8200s] draw 18: panel B 102s
+  draw 18: 478s, peak 6.7 GB in the largest process -> results/boot/draw_018.json
+  [8225s] draw 19: contraction 24s
+  [8247s] draw 19: supply 23s
+  [8555s] draw 19: regimes 308s
+  [8561s] draw 19: panel A 6s
+  [8656s] draw 19: panel B 95s
+  draw 19: 456s, peak 6.7 GB in the largest process -> results/boot/draw_019.json
+  [8689s] draw 20: contraction 33s
+  [8712s] draw 20: supply 23s
+  [9026s] draw 20: regimes 315s
+  [9033s] draw 20: panel A 6s
+  [9138s] draw 20: panel B 105s
+  draw 20: 482s, peak 6.7 GB in the largest process -> results/boot/draw_020.json
+  [9163s] draw 21: contraction 26s
+  [9185s] draw 21: supply 21s
+  [9493s] draw 21: regimes 308s
+  [9500s] draw 21: panel A 6s
+  [9598s] draw 21: panel B 98s
+  draw 21: 460s, peak 6.7 GB in the largest process -> results/boot/draw_021.json
+  [9617s] draw 22: contraction 19s
+  [9638s] draw 22: supply 21s
+  [9922s] draw 22: regimes 283s
+  [9928s] draw 22: panel A 6s
+  [10028s] draw 22: panel B 100s
+  draw 22: 430s, peak 6.7 GB in the largest process -> results/boot/draw_022.json
+  [10060s] draw 23: contraction 33s
+  [10083s] draw 23: supply 23s
+  [10396s] draw 23: regimes 313s
+  [10402s] draw 23: panel A 6s
+  [10507s] draw 23: panel B 105s
+  draw 23: 480s, peak 6.7 GB in the largest process -> results/boot/draw_023.json
+  [10530s] draw 24: contraction 22s
+  [10549s] draw 24: supply 19s
+  [10847s] draw 24: regimes 298s
+  [10853s] draw 24: panel A 6s
+  [10944s] draw 24: panel B 91s
+  draw 24: 437s, peak 6.7 GB in the largest process -> results/boot/draw_024.json
+  [10965s] draw 25: contraction 21s
+  [10984s] draw 25: supply 19s
+  [11278s] draw 25: regimes 294s
+  [11284s] draw 25: panel A 6s
+  [11374s] draw 25: panel B 90s
+  draw 25: 430s, peak 6.7 GB in the largest process -> results/boot/draw_025.json
+  [11410s] draw 26: contraction 35s
+  [11434s] draw 26: supply 24s
+  [11750s] draw 26: regimes 317s
+  [11756s] draw 26: panel A 6s
+  [11866s] draw 26: panel B 109s
+  draw 26: 491s, peak 6.7 GB in the largest process -> results/boot/draw_026.json
+  [11889s] draw 27: contraction 23s
+  [11909s] draw 27: supply 20s
+  [12212s] draw 27: regimes 304s
+  [12219s] draw 27: panel A 7s
+  [12318s] draw 27: panel B 98s
+  draw 27: 452s, peak 6.7 GB in the largest process -> results/boot/draw_027.json
+  [12345s] draw 28: contraction 27s
+  [12367s] draw 28: supply 22s
+  [12691s] draw 28: regimes 324s
+  [12698s] draw 28: panel A 7s
+  [12798s] draw 28: panel B 100s
+  draw 28: 480s, peak 6.7 GB in the largest process -> results/boot/draw_028.json
+  [12824s] draw 29: contraction 26s
+  [12846s] draw 29: supply 22s
+  [13164s] draw 29: regimes 318s
+  [13171s] draw 29: panel A 7s
+  [13272s] draw 29: panel B 100s
+  draw 29: 474s, peak 6.7 GB in the largest process -> results/boot/draw_029.json
+  [13299s] draw 30: contraction 27s
+  [13321s] draw 30: supply 22s
+  [13641s] draw 30: regimes 320s
+  [13648s] draw 30: panel A 7s
+  [13750s] draw 30: panel B 102s
+  draw 30: 478s, peak 6.7 GB in the largest process -> results/boot/draw_030.json
+  [13788s] draw 31: contraction 38s
+  [13813s] draw 31: supply 25s
+  [14152s] draw 31: regimes 339s
+  [14159s] draw 31: panel A 7s
+  [14272s] draw 31: panel B 113s
+  draw 31: 522s, peak 6.7 GB in the largest process -> results/boot/draw_031.json
+  [14295s] draw 32: contraction 23s
+  [14317s] draw 32: supply 23s
+  [14629s] draw 32: regimes 312s
+  [14636s] draw 32: panel A 7s
+  [14738s] draw 32: panel B 102s
+  draw 32: 466s, peak 6.7 GB in the largest process -> results/boot/draw_032.json
+  [14762s] draw 33: contraction 24s
+  [14784s] draw 33: supply 22s
+  [15087s] draw 33: regimes 303s
+  [15093s] draw 33: panel A 6s
+  [15186s] draw 33: panel B 93s
+  draw 33: 448s, peak 6.7 GB in the largest process -> results/boot/draw_033.json
+  [15206s] draw 34: contraction 20s
+  [15226s] draw 34: supply 20s
+  [15522s] draw 34: regimes 296s
+  [15528s] draw 34: panel A 7s
+  [15623s] draw 34: panel B 95s
+  draw 34: 438s, peak 6.7 GB in the largest process -> results/boot/draw_034.json
+  [15648s] draw 35: contraction 24s
+  [15670s] draw 35: supply 23s
+  [15977s] draw 35: regimes 306s
+  [15983s] draw 35: panel A 6s
+  [16082s] draw 35: panel B 99s
+  draw 35: 458s, peak 6.7 GB in the largest process -> results/boot/draw_035.json
+  [16113s] draw 36: contraction 31s
+  [16136s] draw 36: supply 23s
+  [16455s] draw 36: regimes 320s
+  [16462s] draw 36: panel A 6s
+  [16568s] draw 36: panel B 106s
+  draw 36: 486s, peak 6.7 GB in the largest process -> results/boot/draw_036.json
+  [16592s] draw 37: contraction 24s
+  [16613s] draw 37: supply 22s
+  [16921s] draw 37: regimes 308s
+  [16928s] draw 37: panel A 7s
+  [17027s] draw 37: panel B 99s
+  draw 37: 459s, peak 6.7 GB in the largest process -> results/boot/draw_037.json
+  [17057s] draw 38: contraction 30s
+  [17081s] draw 38: supply 23s
+  [17403s] draw 38: regimes 322s
+  [17410s] draw 38: panel A 7s
+  [17518s] draw 38: panel B 108s
+  draw 38: 491s, peak 6.7 GB in the largest process -> results/boot/draw_038.json
+  [17546s] draw 39: contraction 28s
+  [17567s] draw 39: supply 21s
+  [17890s] draw 39: regimes 323s
+  [17897s] draw 39: panel A 7s
+  [18000s] draw 39: panel B 103s
+  draw 39: 482s, peak 6.7 GB in the largest process -> results/boot/draw_039.json
+  [18021s] draw 40: contraction 21s
+  [18042s] draw 40: supply 22s
+  [18344s] draw 40: regimes 302s
+  [18351s] draw 40: panel A 7s
+  [18451s] draw 40: panel B 100s
+  draw 40: 451s, peak 6.7 GB in the largest process -> results/boot/draw_040.json
+  [18474s] draw 41: contraction 24s
+  [18496s] draw 41: supply 22s
+  [18800s] draw 41: regimes 304s
+  [18807s] draw 41: panel A 7s
+  [18907s] draw 41: panel B 100s
+  draw 41: 457s, peak 6.7 GB in the largest process -> results/boot/draw_041.json
+  [18932s] draw 42: contraction 25s
+  [18955s] draw 42: supply 23s
+  [19268s] draw 42: regimes 313s
+  [19275s] draw 42: panel A 7s
+  [19376s] draw 42: panel B 102s
+  draw 42: 469s, peak 6.7 GB in the largest process -> results/boot/draw_042.json
+  [19400s] draw 43: contraction 24s
+  [19422s] draw 43: supply 22s
+  [19732s] draw 43: regimes 310s
+  [19739s] draw 43: panel A 7s
+  [19838s] draw 43: panel B 100s
+  draw 43: 462s, peak 6.7 GB in the largest process -> results/boot/draw_043.json
+  [19868s] draw 44: contraction 29s
+  [19891s] draw 44: supply 23s
+  [20215s] draw 44: regimes 324s
+  [20222s] draw 44: panel A 7s
+  [20328s] draw 44: panel B 106s
+  draw 44: 490s, peak 6.7 GB in the largest process -> results/boot/draw_044.json
+  [20356s] draw 45: contraction 28s
+  [20378s] draw 45: supply 22s
+  [20700s] draw 45: regimes 322s
+  [20707s] draw 45: panel A 7s
+  [20809s] draw 45: panel B 102s
+  draw 45: 481s, peak 6.7 GB in the largest process -> results/boot/draw_045.json
+  [20847s] draw 46: contraction 38s
+  [20874s] draw 46: supply 27s
+  [21203s] draw 46: regimes 329s
+  [21210s] draw 46: panel A 7s
+  [21328s] draw 46: panel B 117s
+  draw 46: 518s, peak 6.7 GB in the largest process -> results/boot/draw_046.json
+  [21358s] draw 47: contraction 31s
+  [21382s] draw 47: supply 24s
+  [21707s] draw 47: regimes 325s
+  [21714s] draw 47: panel A 7s
+  [21822s] draw 47: panel B 108s
+  draw 47: 495s, peak 6.7 GB in the largest process -> results/boot/draw_047.json
+  [21846s] draw 48: contraction 24s
+  [21868s] draw 48: supply 22s
+  [22176s] draw 48: regimes 308s
+  [22182s] draw 48: panel A 6s
+  [22281s] draw 48: panel B 99s
+  draw 48: 459s, peak 6.7 GB in the largest process -> results/boot/draw_048.json
+  [22306s] draw 49: contraction 25s
+  [22329s] draw 49: supply 23s
+  [22646s] draw 49: regimes 317s
+  [22653s] draw 49: panel A 7s
+  [22755s] draw 49: panel B 102s
+  draw 49: 474s, peak 6.7 GB in the largest process -> results/boot/draw_049.json
+  [22786s] draw 50: contraction 31s
+  [22809s] draw 50: supply 23s
+  [23135s] draw 50: regimes 325s
+  [23142s] draw 50: panel A 7s
+  [23249s] draw 50: panel B 107s
+  draw 50: 494s, peak 6.7 GB in the largest process -> results/boot/draw_050.json
+  [23271s] draw 51: contraction 22s
+  [23294s] draw 51: supply 22s
+  [23596s] draw 51: regimes 302s
+  [23603s] draw 51: panel A 7s
+  [23704s] draw 51: panel B 101s
+  draw 51: 455s, peak 6.7 GB in the largest process -> results/boot/draw_051.json
+  [23727s] draw 52: contraction 23s
+  [23749s] draw 52: supply 23s
+  [24055s] draw 52: regimes 306s
+  [24062s] draw 52: panel A 7s
+  [24162s] draw 52: panel B 100s
+  draw 52: 459s, peak 6.7 GB in the largest process -> results/boot/draw_052.json
+  [24188s] draw 53: contraction 26s
+  [24210s] draw 53: supply 22s
+  [24530s] draw 53: regimes 320s
+  [24537s] draw 53: panel A 7s
+  [24638s] draw 53: panel B 102s
+  draw 53: 476s, peak 6.7 GB in the largest process -> results/boot/draw_053.json
+  [24670s] draw 54: contraction 32s
+  [24694s] draw 54: supply 24s
+  [25011s] draw 54: regimes 317s
+  [25018s] draw 54: panel A 6s
+  [25126s] draw 54: panel B 108s
+  draw 54: 487s, peak 6.7 GB in the largest process -> results/boot/draw_054.json
+  [25161s] draw 55: contraction 35s
+  [25185s] draw 55: supply 24s
+  [25516s] draw 55: regimes 331s
+  [25523s] draw 55: panel A 7s
+  [25634s] draw 55: panel B 112s
+  draw 55: 509s, peak 6.7 GB in the largest process -> results/boot/draw_055.json
+  [25674s] draw 56: contraction 39s
+  [25699s] draw 56: supply 26s
+  [26030s] draw 56: regimes 330s
+  [26037s] draw 56: panel A 7s
+  [26151s] draw 56: panel B 115s
+  draw 56: 517s, peak 6.7 GB in the largest process -> results/boot/draw_056.json
+  [26180s] draw 57: contraction 28s
+  [26202s] draw 57: supply 23s
+  [26522s] draw 57: regimes 320s
+  [26529s] draw 57: panel A 7s
+  [26635s] draw 57: panel B 105s
+  draw 57: 483s, peak 6.7 GB in the largest process -> results/boot/draw_057.json
+  [26673s] draw 58: contraction 38s
+  [26699s] draw 58: supply 26s
+  [27032s] draw 58: regimes 333s
+  [27039s] draw 58: panel A 7s
+  [27155s] draw 58: panel B 116s
+  draw 58: 520s, peak 6.7 GB in the largest process -> results/boot/draw_058.json
+  [27205s] draw 59: contraction 50s
+  [27239s] draw 59: supply 34s
+  [27587s] draw 59: regimes 349s
+  [27594s] draw 59: panel A 7s
+  [27728s] draw 59: panel B 134s
+  draw 59: 574s, peak 6.7 GB in the largest process -> results/boot/draw_059.json
+  [27754s] draw 60: contraction 26s
+  [27776s] draw 60: supply 22s
+  [28094s] draw 60: regimes 318s
+  [28101s] draw 60: panel A 7s
+  [28200s] draw 60: panel B 99s
+  draw 60: 471s, peak 6.7 GB in the largest process -> results/boot/draw_060.json
+  [28237s] draw 61: contraction 37s
+  [28262s] draw 61: supply 25s
+  [28599s] draw 61: regimes 337s
+  [28606s] draw 61: panel A 7s
+  [28724s] draw 61: panel B 118s
+  draw 61: 524s, peak 6.7 GB in the largest process -> results/boot/draw_061.json
+  [28749s] draw 62: contraction 26s
+  [28772s] draw 62: supply 22s
+  [29089s] draw 62: regimes 318s
+  [29096s] draw 62: panel A 7s
+  [29198s] draw 62: panel B 102s
+  draw 62: 475s, peak 6.7 GB in the largest process -> results/boot/draw_062.json
+  [29232s] draw 63: contraction 33s
+  [29256s] draw 63: supply 24s
+  [29580s] draw 63: regimes 324s
+  [29587s] draw 63: panel A 7s
+  [29696s] draw 63: panel B 109s
+  draw 63: 497s, peak 6.7 GB in the largest process -> results/boot/draw_063.json
+  [29722s] draw 64: contraction 26s
+  [29745s] draw 64: supply 24s
+  [30062s] draw 64: regimes 317s
+  [30069s] draw 64: panel A 7s
+  [30175s] draw 64: panel B 106s
+  draw 64: 479s, peak 6.7 GB in the largest process -> results/boot/draw_064.json
+  [30206s] draw 65: contraction 31s
+  [30230s] draw 65: supply 23s
+  [30560s] draw 65: regimes 331s
+  [30567s] draw 65: panel A 7s
+  [30674s] draw 65: panel B 107s
+  draw 65: 499s, peak 6.7 GB in the largest process -> results/boot/draw_065.json
+  [30709s] draw 66: contraction 35s
+  [30735s] draw 66: supply 26s
+  [31062s] draw 66: regimes 327s
+  [31069s] draw 66: panel A 7s
+  [31181s] draw 66: panel B 112s
+  draw 66: 507s, peak 6.7 GB in the largest process -> results/boot/draw_066.json
+  [31215s] draw 67: contraction 34s
+  [31239s] draw 67: supply 24s
+  [31572s] draw 67: regimes 333s
+  [31579s] draw 67: panel A 7s
+  [31689s] draw 67: panel B 110s
+  draw 67: 508s, peak 6.7 GB in the largest process -> results/boot/draw_067.json
+  [31713s] draw 68: contraction 23s
+  [31733s] draw 68: supply 21s
+  [32042s] draw 68: regimes 309s
+  [32049s] draw 68: panel A 7s
+  [32146s] draw 68: panel B 97s
+  draw 68: 457s, peak 6.7 GB in the largest process -> results/boot/draw_068.json
+  [32180s] draw 69: contraction 34s
+  [32205s] draw 69: supply 24s
+  [32516s] draw 69: regimes 311s
+  [32522s] draw 69: panel A 6s
+  [32631s] draw 69: panel B 109s
+  draw 69: 485s, peak 6.7 GB in the largest process -> results/boot/draw_069.json
+  [32658s] draw 70: contraction 27s
+  [32679s] draw 70: supply 21s
+  [32997s] draw 70: regimes 317s
+  [33003s] draw 70: panel A 7s
+  [33112s] draw 70: panel B 108s
+  draw 70: 480s, peak 6.7 GB in the largest process -> results/boot/draw_070.json
+  [33138s] draw 71: contraction 27s
+  [33162s] draw 71: supply 24s
+  [33494s] draw 71: regimes 331s
+  [33501s] draw 71: panel A 7s
+  [33609s] draw 71: panel B 108s
+  draw 71: 497s, peak 6.7 GB in the largest process -> results/boot/draw_071.json
+  [33636s] draw 72: contraction 27s
+  [33657s] draw 72: supply 21s
+  [33992s] draw 72: regimes 335s
+  [33999s] draw 72: panel A 7s
+  [34105s] draw 72: panel B 106s
+  draw 72: 497s, peak 6.7 GB in the largest process -> results/boot/draw_072.json
+  [34136s] draw 73: contraction 30s
+  [34161s] draw 73: supply 25s
+  [34497s] draw 73: regimes 336s
+  [34504s] draw 73: panel A 7s
+  [34617s] draw 73: panel B 113s
+  draw 73: 511s, peak 6.7 GB in the largest process -> results/boot/draw_073.json
+  [34644s] draw 74: contraction 27s
+  [34668s] draw 74: supply 24s
+  [35008s] draw 74: regimes 340s
+  [35015s] draw 74: panel A 7s
+  [35128s] draw 74: panel B 113s
+  draw 74: 511s, peak 6.7 GB in the largest process -> results/boot/draw_074.json
+  [35162s] draw 75: contraction 34s
+  [35184s] draw 75: supply 23s
+  [35533s] draw 75: regimes 348s
+  [35540s] draw 75: panel A 7s
+  [35654s] draw 75: panel B 114s
+  draw 75: 526s, peak 6.7 GB in the largest process -> results/boot/draw_075.json
+  [35680s] draw 76: contraction 26s
+  [35704s] draw 76: supply 24s
+  [36040s] draw 76: regimes 336s
+  [36047s] draw 76: panel A 7s
+  [36159s] draw 76: panel B 112s
+  draw 76: 505s, peak 6.7 GB in the largest process -> results/boot/draw_076.json
+  [36186s] draw 77: contraction 27s
+  [36210s] draw 77: supply 24s
+  [36549s] draw 77: regimes 339s
+  [36555s] draw 77: panel A 7s
+  [36667s] draw 77: panel B 112s
+  draw 77: 508s, peak 6.7 GB in the largest process -> results/boot/draw_077.json
+  [36701s] draw 78: contraction 34s
+  [36727s] draw 78: supply 26s
+  [37070s] draw 78: regimes 343s
+  [37077s] draw 78: panel A 7s
+  [37197s] draw 78: panel B 120s
+  draw 78: 530s, peak 6.7 GB in the largest process -> results/boot/draw_078.json
+  [37223s] draw 79: contraction 26s
+  [37247s] draw 79: supply 24s
+  [37581s] draw 79: regimes 334s
+  [37588s] draw 79: panel A 7s
+  [37700s] draw 79: panel B 113s
+  draw 79: 504s, peak 6.7 GB in the largest process -> results/boot/draw_079.json
+  [37736s] draw 80: contraction 35s
+  [37762s] draw 80: supply 26s
+  [38106s] draw 80: regimes 344s
+  [38113s] draw 80: panel A 7s
+  [38234s] draw 80: panel B 122s
+  draw 80: 534s, peak 6.7 GB in the largest process -> results/boot/draw_080.json
+  [38263s] draw 81: contraction 29s
+  [38288s] draw 81: supply 25s
+  [38627s] draw 81: regimes 339s
+  [38634s] draw 81: panel A 7s
+  [38748s] draw 81: panel B 114s
+  draw 81: 514s, peak 6.7 GB in the largest process -> results/boot/draw_081.json
+  [38773s] draw 82: contraction 25s
+  [38797s] draw 82: supply 24s
+  [39136s] draw 82: regimes 339s
+  [39143s] draw 82: panel A 7s
+  [39248s] draw 82: panel B 105s
+  draw 82: 500s, peak 6.7 GB in the largest process -> results/boot/draw_082.json
+  [39273s] draw 83: contraction 24s
+  [39296s] draw 83: supply 23s
+  [39623s] draw 83: regimes 327s
+  [39631s] draw 83: panel A 7s
+  [39732s] draw 83: panel B 102s
+  draw 83: 484s, peak 6.7 GB in the largest process -> results/boot/draw_083.json
+  [39760s] draw 84: contraction 27s
+  [39783s] draw 84: supply 24s
+  [40117s] draw 84: regimes 333s
+  [40124s] draw 84: panel A 7s
+  [40236s] draw 84: panel B 112s
+  draw 84: 503s, peak 6.7 GB in the largest process -> results/boot/draw_084.json
+  [40263s] draw 85: contraction 28s
+  [40288s] draw 85: supply 24s
+  [40622s] draw 85: regimes 334s
+  [40629s] draw 85: panel A 8s
+  [40741s] draw 85: panel B 111s
+  draw 85: 505s, peak 6.7 GB in the largest process -> results/boot/draw_085.json
+  [40768s] draw 86: contraction 27s
+  [40791s] draw 86: supply 23s
+  [41128s] draw 86: regimes 337s
+  [41136s] draw 86: panel A 7s
+  [41240s] draw 86: panel B 105s
+  draw 86: 500s, peak 6.7 GB in the largest process -> results/boot/draw_086.json
+  [41263s] draw 87: contraction 23s
+  [41286s] draw 87: supply 23s
+  [41605s] draw 87: regimes 319s
+  [41612s] draw 87: panel A 7s
+  [41716s] draw 87: panel B 104s
+  draw 87: 475s, peak 6.7 GB in the largest process -> results/boot/draw_087.json
+  [41742s] draw 88: contraction 26s
+  [41765s] draw 88: supply 24s
+  [42093s] draw 88: regimes 327s
+  [42099s] draw 88: panel A 6s
+  [42209s] draw 88: panel B 109s
+  draw 88: 493s, peak 6.7 GB in the largest process -> results/boot/draw_088.json
+  [42244s] draw 89: contraction 35s
+  [42270s] draw 89: supply 26s
+  [42611s] draw 89: regimes 341s
+  [42618s] draw 89: panel A 7s
+  [42739s] draw 89: panel B 121s
+  draw 89: 531s, peak 6.7 GB in the largest process -> results/boot/draw_089.json
+  [42765s] draw 90: contraction 26s
+  [42785s] draw 90: supply 20s
+  [43120s] draw 90: regimes 335s
+  [43127s] draw 90: panel A 7s
+  [43234s] draw 90: panel B 106s
+  draw 90: 494s, peak 6.7 GB in the largest process -> results/boot/draw_090.json
+  [43270s] draw 91: contraction 36s
+  [43297s] draw 91: supply 27s
+  [43645s] draw 91: regimes 349s
+  [43652s] draw 91: panel A 6s
+  [43766s] draw 91: panel B 114s
+  draw 91: 532s, peak 6.7 GB in the largest process -> results/boot/draw_091.json
+  [43793s] draw 92: contraction 27s
+  [43816s] draw 92: supply 23s
+  [44150s] draw 92: regimes 334s
+  [44157s] draw 92: panel A 7s
+  [44267s] draw 92: panel B 110s
+  draw 92: 501s, peak 6.7 GB in the largest process -> results/boot/draw_092.json
+  [44308s] draw 93: contraction 40s
+  [44333s] draw 93: supply 25s
+  [44687s] draw 93: regimes 354s
+  [44694s] draw 93: panel A 7s
+  [44819s] draw 93: panel B 125s
+  draw 93: 552s, peak 6.7 GB in the largest process -> results/boot/draw_093.json
+  [44843s] draw 94: contraction 24s
+  [44866s] draw 94: supply 23s
+  [45193s] draw 94: regimes 327s
+  [45199s] draw 94: panel A 7s
+  [45305s] draw 94: panel B 106s
+  draw 94: 486s, peak 6.7 GB in the largest process -> results/boot/draw_094.json
+  [45330s] draw 95: contraction 25s
+  [45353s] draw 95: supply 23s
+  [45678s] draw 95: regimes 325s
+  [45685s] draw 95: panel A 7s
+  [45792s] draw 95: panel B 107s
+  draw 95: 487s, peak 6.7 GB in the largest process -> results/boot/draw_095.json
+  [45817s] draw 96: contraction 25s
+  [45840s] draw 96: supply 22s
+  [46167s] draw 96: regimes 328s
+  [46174s] draw 96: panel A 7s
+  [46281s] draw 96: panel B 107s
+  draw 96: 489s, peak 6.7 GB in the largest process -> results/boot/draw_096.json
+  [46316s] draw 97: contraction 35s
+  [46339s] draw 97: supply 23s
+  [46691s] draw 97: regimes 352s
+  [46698s] draw 97: panel A 7s
+  [46816s] draw 97: panel B 118s
+  draw 97: 535s, peak 6.7 GB in the largest process -> results/boot/draw_097.json
+  [46860s] draw 98: contraction 44s
+  [46891s] draw 98: supply 31s
+  [47244s] draw 98: regimes 352s
+  [47251s] draw 98: panel A 7s
+  [47386s] draw 98: panel B 135s
+  draw 98: 570s, peak 6.7 GB in the largest process -> results/boot/draw_098.json
+  [47408s] draw 99: contraction 22s
+  [47431s] draw 99: supply 23s
+  [47752s] draw 99: regimes 322s
+  [47759s] draw 99: panel A 7s
+  [47870s] draw 99: panel B 111s
+  draw 99: 484s, peak 6.7 GB in the largest process -> results/boot/draw_099.json
+  [47899s] draw 100: contraction 29s
+  [47924s] draw 100: supply 25s
+  [48258s] draw 100: regimes 334s
+  [48266s] draw 100: panel A 7s
+  [48381s] draw 100: panel B 115s
+  draw 100: 511s, peak 6.7 GB in the largest process -> results/boot/draw_100.json
+  [48411s] draw 101: contraction 30s
+  [48435s] draw 101: supply 24s
+  [48776s] draw 101: regimes 341s
+  [48783s] draw 101: panel A 7s
+  [48897s] draw 101: panel B 114s
+  draw 101: 516s, peak 6.7 GB in the largest process -> results/boot/draw_101.json
+  [48934s] draw 102: contraction 37s
+  [48961s] draw 102: supply 27s
+  [49312s] draw 102: regimes 351s
+  [49318s] draw 102: panel A 7s
+  [49442s] draw 102: panel B 124s
+  draw 102: 545s, peak 6.7 GB in the largest process -> results/boot/draw_102.json
+  [49468s] draw 103: contraction 26s
+  [49491s] draw 103: supply 23s
+  [49820s] draw 103: regimes 329s
+  [49827s] draw 103: panel A 7s
+  [49936s] draw 103: panel B 109s
+  draw 103: 494s, peak 6.7 GB in the largest process -> results/boot/draw_103.json
+  [49961s] draw 104: contraction 25s
+  [49981s] draw 104: supply 20s
+  [50314s] draw 104: regimes 334s
+  [50322s] draw 104: panel A 7s
+  [50426s] draw 104: panel B 104s
+  draw 104: 490s, peak 6.7 GB in the largest process -> results/boot/draw_104.json
+  [50465s] draw 105: contraction 39s
+  [50493s] draw 105: supply 28s
+  [50842s] draw 105: regimes 349s
+  [50848s] draw 105: panel A 7s
+  [50972s] draw 105: panel B 124s
+  draw 105: 546s, peak 6.7 GB in the largest process -> results/boot/draw_105.json
+  [51000s] draw 106: contraction 28s
+  [51024s] draw 106: supply 24s
+  [51360s] draw 106: regimes 336s
+  [51367s] draw 106: panel A 7s
+  [51480s] draw 106: panel B 112s
+  draw 106: 508s, peak 6.7 GB in the largest process -> results/boot/draw_106.json
+  [51501s] draw 107: contraction 21s
+  [51522s] draw 107: supply 21s
+  [51833s] draw 107: regimes 311s
+  [51840s] draw 107: panel A 7s
+  [51950s] draw 107: panel B 110s
+  draw 107: 471s, peak 6.7 GB in the largest process -> results/boot/draw_107.json
+  [51980s] draw 108: contraction 30s
+  [52003s] draw 108: supply 23s
+  [52341s] draw 108: regimes 338s
+  [52348s] draw 108: panel A 7s
+  [52464s] draw 108: panel B 116s
+  draw 108: 513s, peak 6.7 GB in the largest process -> results/boot/draw_108.json
+  [52490s] draw 109: contraction 26s
+  [52511s] draw 109: supply 21s
+  [52849s] draw 109: regimes 338s
+  [52856s] draw 109: panel A 7s
+  [52966s] draw 109: panel B 110s
+  draw 109: 502s, peak 6.7 GB in the largest process -> results/boot/draw_109.json
+  [52992s] draw 110: contraction 26s
+  [53015s] draw 110: supply 23s
+  [53347s] draw 110: regimes 332s
+  [53353s] draw 110: panel A 7s
+  [53453s] draw 110: panel B 100s
+  draw 110: 487s, peak 6.7 GB in the largest process -> results/boot/draw_110.json
+  [53479s] draw 111: contraction 26s
+  [53502s] draw 111: supply 23s
+  [53832s] draw 111: regimes 330s
+  [53839s] draw 111: panel A 7s
+  [53942s] draw 111: panel B 103s
+  draw 111: 489s, peak 6.7 GB in the largest process -> results/boot/draw_111.json
+  [53977s] draw 112: contraction 35s
+  [54003s] draw 112: supply 26s
+  [54346s] draw 112: regimes 342s
+  [54353s] draw 112: panel A 7s
+  [54473s] draw 112: panel B 120s
+  draw 112: 531s, peak 6.7 GB in the largest process -> results/boot/draw_112.json
+  [54509s] draw 113: contraction 35s
+  [54532s] draw 113: supply 23s
+  [54878s] draw 113: regimes 346s
+  [54885s] draw 113: panel A 7s
+  [55003s] draw 113: panel B 118s
+  draw 113: 530s, peak 6.7 GB in the largest process -> results/boot/draw_113.json
+  [55032s] draw 114: contraction 28s
+  [55055s] draw 114: supply 23s
+  [55401s] draw 114: regimes 346s
+  [55408s] draw 114: panel A 7s
+  [55516s] draw 114: panel B 108s
+  draw 114: 512s, peak 6.7 GB in the largest process -> results/boot/draw_114.json
+  [55542s] draw 115: contraction 26s
+  [55566s] draw 115: supply 24s
+  [55904s] draw 115: regimes 338s
+  [55912s] draw 115: panel A 7s
+  [56025s] draw 115: panel B 113s
+  draw 115: 509s, peak 6.7 GB in the largest process -> results/boot/draw_115.json
+  [56062s] draw 116: contraction 37s
+  [56089s] draw 116: supply 27s
+  [56429s] draw 116: regimes 340s
+  [56436s] draw 116: panel A 7s
+  [56560s] draw 116: panel B 124s
+  draw 116: 535s, peak 6.7 GB in the largest process -> results/boot/draw_116.json
+  [56588s] draw 117: contraction 28s
+  [56611s] draw 117: supply 22s
+  [56951s] draw 117: regimes 341s
+  [56958s] draw 117: panel A 7s
+  [57067s] draw 117: panel B 109s
+  draw 117: 508s, peak 6.7 GB in the largest process -> results/boot/draw_117.json
+  [57094s] draw 118: contraction 27s
+  [57118s] draw 118: supply 24s
+  [57451s] draw 118: regimes 333s
+  [57458s] draw 118: panel A 7s
+  [57562s] draw 118: panel B 104s
+  draw 118: 495s, peak 6.7 GB in the largest process -> results/boot/draw_118.json
+  [57589s] draw 119: contraction 27s
+  [57613s] draw 119: supply 23s
+  [57944s] draw 119: regimes 332s
+  [57951s] draw 119: panel A 6s
+  [58060s] draw 119: panel B 109s
+  draw 119: 497s, peak 6.7 GB in the largest process -> results/boot/draw_119.json
+  [58089s] draw 120: contraction 29s
+  [58114s] draw 120: supply 25s
+  [58450s] draw 120: regimes 336s
+  [58457s] draw 120: panel A 7s
+  [58574s] draw 120: panel B 116s
+  draw 120: 514s, peak 6.7 GB in the largest process -> results/boot/draw_120.json
+  [58598s] draw 121: contraction 25s
+  [58622s] draw 121: supply 24s
+  [58954s] draw 121: regimes 332s
+  [58961s] draw 121: panel A 7s
+  [59069s] draw 121: panel B 108s
+  draw 121: 495s, peak 6.7 GB in the largest process -> results/boot/draw_121.json
+  [59099s] draw 122: contraction 30s
+  [59123s] draw 122: supply 24s
+  [59464s] draw 122: regimes 341s
+  [59471s] draw 122: panel A 7s
+  [59585s] draw 122: panel B 114s
+  draw 122: 516s, peak 6.7 GB in the largest process -> results/boot/draw_122.json
+  [59625s] draw 123: contraction 40s
+  [59652s] draw 123: supply 27s
+  [60005s] draw 123: regimes 353s
+  [60012s] draw 123: panel A 7s
+  [60135s] draw 123: panel B 124s
+  draw 123: 550s, peak 6.7 GB in the largest process -> results/boot/draw_123.json
+  [60167s] draw 124: contraction 32s
+  [60193s] draw 124: supply 25s
+  [60535s] draw 124: regimes 343s
+  [60542s] draw 124: panel A 6s
+  [60660s] draw 124: panel B 119s
+  draw 124: 525s, peak 6.7 GB in the largest process -> results/boot/draw_124.json
+  [60684s] draw 125: contraction 24s
+  [60707s] draw 125: supply 23s
+  [61032s] draw 125: regimes 325s
+  [61039s] draw 125: panel A 7s
+  [61144s] draw 125: panel B 105s
+  draw 125: 484s, peak 6.7 GB in the largest process -> results/boot/draw_125.json
+  [61191s] draw 126: contraction 47s
+  [61226s] draw 126: supply 34s
+  [61581s] draw 126: regimes 355s
+  [61588s] draw 126: panel A 7s
+  [61729s] draw 126: panel B 141s
+  draw 126: 584s, peak 6.7 GB in the largest process -> results/boot/draw_126.json
+  [61753s] draw 127: contraction 24s
+  [61774s] draw 127: supply 21s
+  [62103s] draw 127: regimes 329s
+  [62110s] draw 127: panel A 7s
+  [62218s] draw 127: panel B 108s
+  draw 127: 489s, peak 6.7 GB in the largest process -> results/boot/draw_127.json
+  [62257s] draw 128: contraction 40s
+  [62284s] draw 128: supply 27s
+  [62638s] draw 128: regimes 354s
+  [62645s] draw 128: panel A 7s
+  [62772s] draw 128: panel B 127s
+  draw 128: 554s, peak 6.7 GB in the largest process -> results/boot/draw_128.json
+  [62796s] draw 129: contraction 24s
+  [62820s] draw 129: supply 23s
+  [63148s] draw 129: regimes 328s
+  [63155s] draw 129: panel A 7s
+  [63265s] draw 129: panel B 110s
+  draw 129: 493s, peak 6.7 GB in the largest process -> results/boot/draw_129.json
+  [63292s] draw 130: contraction 27s
+  [63316s] draw 130: supply 24s
+  [63652s] draw 130: regimes 336s
+  [63658s] draw 130: panel A 7s
+  [63771s] draw 130: panel B 113s
+  draw 130: 506s, peak 6.7 GB in the largest process -> results/boot/draw_130.json
+  [63798s] draw 131: contraction 27s
+  [63822s] draw 131: supply 24s
+  [64155s] draw 131: regimes 333s
+  [64162s] draw 131: panel A 8s
+  [64275s] draw 131: panel B 113s
+  draw 131: 504s, peak 6.7 GB in the largest process -> results/boot/draw_131.json
+  [64301s] draw 132: contraction 26s
+  [64322s] draw 132: supply 20s
+  [64655s] draw 132: regimes 334s
+  [64662s] draw 132: panel A 7s
+  [64769s] draw 132: panel B 106s
+  draw 132: 493s, peak 6.7 GB in the largest process -> results/boot/draw_132.json
+  [64803s] draw 133: contraction 34s
+  [64829s] draw 133: supply 26s
+  [65177s] draw 133: regimes 348s
+  [65185s] draw 133: panel A 7s
+  [65296s] draw 133: panel B 112s
+  draw 133: 528s, peak 6.7 GB in the largest process -> results/boot/draw_133.json
+  [65323s] draw 134: contraction 26s
+  [65345s] draw 134: supply 23s
+  [65681s] draw 134: regimes 335s
+  [65688s] draw 134: panel A 7s
+  [65786s] draw 134: panel B 99s
+  draw 134: 490s, peak 6.7 GB in the largest process -> results/boot/draw_134.json
+  [65811s] draw 135: contraction 25s
+  [65835s] draw 135: supply 24s
+  [66175s] draw 135: regimes 340s
+  [66182s] draw 135: panel A 6s
+  [66290s] draw 135: panel B 108s
+  draw 135: 504s, peak 6.7 GB in the largest process -> results/boot/draw_135.json
+  [66327s] draw 136: contraction 37s
+  [66356s] draw 136: supply 28s
+  [66697s] draw 136: regimes 341s
+  [66704s] draw 136: panel A 7s
+  [66832s] draw 136: panel B 128s
+  draw 136: 542s, peak 6.7 GB in the largest process -> results/boot/draw_136.json
+  [66869s] draw 137: contraction 37s
+  [66894s] draw 137: supply 25s
+  [67238s] draw 137: regimes 344s
+  [67245s] draw 137: panel A 7s
+  [67369s] draw 137: panel B 124s
+  draw 137: 537s, peak 6.7 GB in the largest process -> results/boot/draw_137.json
+  [67394s] draw 138: contraction 24s
+  [67417s] draw 138: supply 23s
+  [67746s] draw 138: regimes 328s
+  [67753s] draw 138: panel A 7s
+  [67858s] draw 138: panel B 105s
+  draw 138: 489s, peak 6.7 GB in the largest process -> results/boot/draw_138.json
+  [67884s] draw 139: contraction 26s
+  [67908s] draw 139: supply 24s
+  [68240s] draw 139: regimes 332s
+  [68247s] draw 139: panel A 7s
+  [68360s] draw 139: panel B 113s
+  draw 139: 502s, peak 6.7 GB in the largest process -> results/boot/draw_139.json
+  [68388s] draw 140: contraction 28s
+  [68414s] draw 140: supply 26s
+  [68746s] draw 140: regimes 332s
+  [68754s] draw 140: panel A 8s
+  [68869s] draw 140: panel B 115s
+  draw 140: 509s, peak 6.7 GB in the largest process -> results/boot/draw_140.json
+  [68895s] draw 141: contraction 26s
+  [68917s] draw 141: supply 22s
+  [69250s] draw 141: regimes 333s
+  [69257s] draw 141: panel A 7s
+  [69369s] draw 141: panel B 112s
+  draw 141: 500s, peak 6.7 GB in the largest process -> results/boot/draw_141.json
+  [69393s] draw 142: contraction 24s
+  [69416s] draw 142: supply 23s
+  [69754s] draw 142: regimes 338s
+  [69761s] draw 142: panel A 7s
+  [69863s] draw 142: panel B 102s
+  draw 142: 494s, peak 6.7 GB in the largest process -> results/boot/draw_142.json
+  [69901s] draw 143: contraction 38s
+  [69929s] draw 143: supply 28s
+  [70273s] draw 143: regimes 344s
+  [70280s] draw 143: panel A 7s
+  [70405s] draw 143: panel B 125s
+  draw 143: 542s, peak 6.7 GB in the largest process -> results/boot/draw_143.json
+  [70444s] draw 144: contraction 39s
+  [70469s] draw 144: supply 25s
+  [70820s] draw 144: regimes 351s
+  [70827s] draw 144: panel A 7s
+  [70949s] draw 144: panel B 122s
+  draw 144: 544s, peak 6.7 GB in the largest process -> results/boot/draw_144.json
+  [70977s] draw 145: contraction 27s
+  [71001s] draw 145: supply 24s
+  [71339s] draw 145: regimes 338s
+  [71346s] draw 145: panel A 6s
+  [71459s] draw 145: panel B 113s
+  draw 145: 510s, peak 6.7 GB in the largest process -> results/boot/draw_145.json
+  [71490s] draw 146: contraction 31s
+  [71515s] draw 146: supply 25s
+  [71857s] draw 146: regimes 342s
+  [71863s] draw 146: panel A 7s
+  [71978s] draw 146: panel B 115s
+  draw 146: 519s, peak 6.7 GB in the largest process -> results/boot/draw_146.json
+  [72021s] draw 147: contraction 43s
+  [72049s] draw 147: supply 28s
